@@ -1,0 +1,32 @@
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todoDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  width: 300px;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.checkboxFalse,
+.checkboxTrue {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: solid black 1px;
+}
+.checkboxTrue {
+  background-color: aquamarine;
+}
+
+.checkboxFalse {
+  background-color: red;
+}
