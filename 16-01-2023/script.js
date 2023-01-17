@@ -13,28 +13,6 @@
 
 // ----------ESERCIZIO AVANZATO----------
 
-const buttonEl = document.querySelector(".loadingBtn");
-const loadingEl = document.createElement("div");
-loadingEl.className = "loadingContainer";
-loadingEl.textContent = "Caricamento...";
-loadingEl.style.display = "none";
-document.body.appendChild(loadingEl);
-
-buttonEl.addEventListener("click", () => {
-  buttonEl.style.display = "none";
-  loadingEl.style.display = "block";
-  fetch("https://api.escuelajs.co/api/v1/products")
-    .then((res) => res.json())
-    .then((data) => cardGenerator(data))
-    .catch((e) => {
-      loadingEl.style.textAlign = "center";
-      loadingEl.style.display = "block";
-      loadingEl.style.color = "red";
-      loadingEl.textContent = "Errore!";
-      console.log(e);
-    });
-});
-
 const cardGenerator = (data) => {
   data.forEach((item) => {
     const cardEl = document.createElement("div");
@@ -49,6 +27,7 @@ const cardGenerator = (data) => {
     const catEl = document.createElement("p");
 
     imgEl.setAttribute("src", item.images);
+    likeBtnEl.setAttribute("data-micron", "flicker");
     titleEl.textContent = item.title;
     descrEl.textContent = item.description;
     priceEl.textContent = `${item.price} €`;
@@ -73,3 +52,25 @@ const cardGenerator = (data) => {
     loadingEl.style.display = "none";
   });
 };
+
+const buttonEl = document.querySelector(".loadingBtn");
+const loadingEl = document.createElement("div");
+loadingEl.className = "loadingContainer";
+loadingEl.textContent = "Caricamento...";
+loadingEl.style.display = "none";
+document.body.appendChild(loadingEl);
+
+buttonEl.addEventListener("click", () => {
+  buttonEl.style.display = "none";
+  loadingEl.style.display = "block";
+  fetch("https://api.escuelajs.co/api/v1/products")
+    .then((res) => res.json())
+    .then((data) => cardGenerator(data))
+    .catch((e) => {
+      loadingEl.style.textAlign = "center";
+      loadingEl.style.display = "block";
+      loadingEl.style.color = "red";
+      loadingEl.textContent = "Errore!";
+      console.log(e);
+    });
+});
