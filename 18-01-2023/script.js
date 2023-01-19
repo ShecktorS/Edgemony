@@ -77,6 +77,7 @@ const addToCartFunc = (title, price) => {
   priceCartEl.className = "priceCart";
   const rmButtonCart = document.createElement("div");
   rmButtonCart.className = "rmButton";
+  rmButtonCart.textContent = "togli dal carrello";
   const lineRmEl = document.createElement("div");
 
   tendinaEl.appendChild(productToCartEl);
@@ -100,6 +101,6 @@ buttonEl.addEventListener("click", () => {
     });
 });
 
-// const rmvFromCartFunc = () => {
-//   delete cartArr[x]
-// };
+const rmvFromCartFunc = () => {
+  delete cartArr[x];
+};
