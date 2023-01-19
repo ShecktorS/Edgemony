@@ -15,7 +15,7 @@ containerForm.addEventListener("submit", (event) => {
     images: [imageForm.value],
   };
 
-  if (obj.price >= 1) {
+  if (obj.price >= 1 && obj.categoryId >= 1) {
     console.log("title: " + obj.title);
     console.log(`price: € ${obj.price},00`);
     console.log("description: " + obj.description);
@@ -26,7 +26,7 @@ containerForm.addEventListener("submit", (event) => {
 
     alert("Hai mandato la tua richiesta!");
   } else {
-    alert("Mi dispiace ma le offerte partono da € 1!");
+    alert("Mi dispiace ma l'offerta non può essere accettata!");
   }
 });
 

@@ -10,8 +10,8 @@
   </head>
   <body id="bodyForm">
     <a href="./index.html" class="homePage"> Torna alla Home </a>
-    <h1 class="consiglio">Consigliaci un prodotto!</h1>
-    <form id="containerForm">
+    <h1 class="productRequest">Consigliaci un prodotto!</h1>
+    <form id="containerFormProduct">
       <input
         type="text"
         name="title"
@@ -33,7 +33,6 @@
         class="inputForm"
         placeholder="Categoria del prodotto (inserisci un numero)"
       />
-      <!-- inserire select  -->
       <input
         type="url"
         name="image"
@@ -52,5 +51,24 @@
       ></textarea>
       <input type="submit" value="INVIA!" id="buttonForm" />
     </form>
+    <div class="leftContainer">
+      <h2 class="categoryRequest">Consigliaci una categoria!</h2>
+      <form id="containerFormcategory">
+        <div class="categoryForm">
+          <label for="catName">Nome della categoria:</label>
+          <input type="text" name="catName" id="catName" />
+        </div>
+        <div class="categoryForm">
+          <label for="catImage">Immagine della categoria:</label>
+          <input
+            type="text"
+            name="catImage"
+            id="catImage"
+            placeholder="Inserisci un link!"
+          />
+        </div>
+        <input type="submit" value="INVIA!" id="buttonCategory" />
+      </form>
+    </div>
   </body>
 </html>
