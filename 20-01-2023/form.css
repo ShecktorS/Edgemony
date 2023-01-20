@@ -1,0 +1,139 @@
+/* --------------FORM------------------ */
+#bodyForm {
+  padding: 10px 10px 0 10px;
+  padding-bottom: 1000px;
+}
+.productRequest {
+  text-align: center;
+}
+
+.leftContainer {
+  position: absolute;
+  right: 30px;
+  height: 400px;
+  width: 350px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.rightContainer {
+  position: absolute;
+  left: 30px;
+  height: 400px;
+  width: 350px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#containerFormcategory,
+#containerFormDel {
+  height: 300px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#containerFormProduct {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 650px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+#editProduct {
+  position: absolute;
+  top: 800px;
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 650px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.categoryForm label {
+  display: block;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.inputForm,
+#catName,
+#catImage,
+#delId {
+  border-radius: 20px;
+  padding: 10px 0 10px 30px;
+}
+
+#buttonCategory,
+#buttonId {
+  height: 50px;
+  width: 100px;
+  display: block;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #d5adff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.4s;
+  margin-top: 20px;
+}
+
+#buttonCategory:hover {
+  background-color: rgb(229, 211, 248);
+}
+
+#buttonForm,
+#buttonFormEdit {
+  padding: 30px 0px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #d5adff;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.4s;
+  margin-top: 30px;
+}
+
+#buttonForm:hover,
+#buttonFormEdit:hover {
+  background-color: rgb(229, 211, 248);
+}
+
+.homePage {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.4s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.homePage:hover {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  border-radius: 20px;
+}

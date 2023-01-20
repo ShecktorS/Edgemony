@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./form.css" />
+    <script src="./form.js" type="module"></script>
+  </head>
+  <body id="bodyForm">
+    <a href="./index.html" class="homePage"> <-- Torna alla Home </a>
+    <h1 class="productRequest">Consigliaci un prodotto!</h1>
+    <form id="containerFormProduct">
+      <input
+        type="text"
+        name="title"
+        id="titleForm"
+        class="inputForm"
+        placeholder="Nome del prodotto"
+      />
+      <input
+        type="number"
+        name="price"
+        id="priceForm"
+        class="inputForm"
+        placeholder="Prezzo del prodotto (inserisci un numero)"
+      />
+      <input
+        type="number"
+        name="category"
+        id="categoryIdForm"
+        class="inputForm"
+        placeholder="Categoria del prodotto (inserisci un numero)"
+      />
+      <input
+        type="url"
+        name="image"
+        id="imageForm"
+        class="inputForm"
+        placeholder="Link dell'immagine "
+      />
+      <textarea
+        name="description"
+        id="descriptionForm"
+        class="inputForm"
+        cols="30"
+        rows="10"
+        maxlength="500"
+        placeholder="Descrizione del prodotto"
+      ></textarea>
+      <input type="submit" value="INVIA!" id="buttonForm" />
+    </form>
+    <div class="leftContainer">
+      <h2 class="categoryRequest">Consigliaci una categoria!</h2>
+      <form id="containerFormcategory">
+        <div class="categoryForm">
+          <label for="catName">Nome della categoria:</label>
+          <input type="text" name="catName" id="catName" />
+        </div>
+        <div class="categoryForm">
+          <label for="catImage">Immagine della categoria:</label>
+          <input
+            type="text"
+            name="catImage"
+            id="catImage"
+            placeholder="Inserisci un link!"
+          />
+        </div>
+        <input type="submit" value="INVIA!" id="buttonCategory" />
+      </form>
+    </div>
+
+    <div class="rightContainer">
+      <h2 class="deleteRequest">Elimina un prodotto!</h2>
+      <form id="containerFormDel">
+        <div class="delForm">
+          <label for="delID">ID del prodotto:</label>
+          <input type="text" name="delID" id="delId" />
+        </div>
+        <input type="submit" value="INVIA!" id="buttonId" />
+      </form>
+    </div>
+    <div class="editProd">
+      <form id="editProduct">
+        <input
+          type="text"
+          name="id"
+          id="productIdFormEdit"
+          class="inputForm"
+          placeholder="ID del prodotto"
+        />
+        <input
+          type="text"
+          name="title"
+          id="titleFormEdit"
+          class="inputForm"
+          placeholder="Nome del prodotto"
+        />
+        <input
+          type="number"
+          name="price"
+          id="priceFormEdit"
+          class="inputForm"
+          placeholder="Prezzo del prodotto (inserisci un numero)"
+        />
+        <input
+          type="number"
+          name="category"
+          id="categoryIdFormEdit"
+          class="inputForm"
+          placeholder="Categoria del prodotto (inserisci un numero)"
+        />
+        <input
+          type="url"
+          name="image"
+          id="imageFormEdit"
+          class="inputForm"
+          placeholder="Link dell'immagine "
+        />
+        <textarea
+          name="description"
+          id="descriptionFormEdit"
+          class="inputForm"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          placeholder="Descrizione del prodotto"
+        ></textarea>
+        <input type="submit" value="INVIA!" id="buttonFormEdit" />
+      </form>
+    </div>
+  </body>
+</html>

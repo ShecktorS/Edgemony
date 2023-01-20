@@ -167,14 +167,6 @@ header {
   font-size: 10px;
 }
 
-.hamburger {
-  height: 50px;
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .searchIdBar {
   display: none;
   height: 30px;
@@ -215,17 +207,19 @@ header {
 
 /* ----------------SEZIONE LOADING----------------------- */
 .loadingBtn {
-  height: 30px;
-  width: 100px;
-  border-radius: 30px;
+  height: 300px;
+  width: 800px;
+  border-radius: 800px;
   border: none;
   background-color: #c4c3c3;
+  font-size: 100px;
+  color: aliceblue;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: calc(50% - 15px);
-  left: calc(50% - 50px);
+  left: calc(50% - 400px);
 }
 
 .loadingBtn:hover {
@@ -234,14 +228,14 @@ header {
 
 .loadingContainer {
   height: 100vh;
-  width: 100vh;
-  align-items: center;
+  width: 100%;
+  padding-left: 30%;
   background-color: white;
-  font-size: 7em;
+  font-size: 6em;
   z-index: 5;
 }
 
-/* --------------SEZIONE PRODOTTI---------------- */
+/* --------------INIZIO SEZIONE PRODOTTI---------------- */
 .cardContainer {
   padding-top: 150px;
   width: 100%;
