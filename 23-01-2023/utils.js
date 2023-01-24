@@ -29,6 +29,7 @@ const createBtnEl = (div) => {
   div.appendChild(changeQuoteBtnEl);
   return changeQuoteBtnEl.addEventListener("click", () => location.reload());
 };
+
 // Create async function
 
 const GET = async (randomNumber) => {
