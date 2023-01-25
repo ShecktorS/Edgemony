@@ -2,7 +2,13 @@
 //   .then((res) => res.json())
 //   .then((data) => console.log(data));
 const cE = (type) => document.createElement(type);
+let searchedValue = "";
 const bodyEl = document.body;
+
+const cardsDelete = () => {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card) => card.remove);
+};
 
 const GET = async () => {
   const res = await fetch("https://dummyjson.com/users?limit=10");
@@ -47,3 +53,18 @@ GET().then((users) => {
     infoEl.append(nameEl, ageEl, phoneEl, emailEl);
   });
 });
+
+const searchBarEl = cE("input");
+searchBarEl.setAttribute("id", "searchInput");
+searchBarEl.className = "searchInputClass";
+
+searchBarEl.addEventListener("input", (e) => {
+  cardsDelete();
+  searchedValue = e.target.value;
+
+  GET().then((users) => {
+    users.forEach((user) => console.log(user.title));
+  });
+});
+
+bodyEl.appendChild(searchBarEl);
