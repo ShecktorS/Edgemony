@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(7, 7, 67);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+.most_popular,
+.top_rated {
+  display: flex;
+  gap: 20px;
+  overflow-y: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+.div_search {
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
