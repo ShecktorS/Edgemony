@@ -65,3 +65,5 @@ searchEl.addEventListener("submit", (e) => {
     searchGen(data);
   });
 });
+
+// Per visualizzare l'esercizio base invece dell'avanzato decommentare righe 54-59 e commmentare 61-67
