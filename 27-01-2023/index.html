@@ -9,23 +9,32 @@
     <script src="./script.js" type="module"></script>
   </head>
   <body>
-    <header></header>
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="https://www.nesquik.it/sites/default/files/header-logo-nesquik%402x.png"
+          alt="logo_image"
+        />
+      </div>
+    </header>
     <main>
-      <form class="search">
-        <input type="text" placeholder="Cerca" />
-        <input type="submit" value="CERCA" />
-      </form>
       <section class="my_tv">
         <div class="most_popular_container">
           <h1>Most Popular</h1>
           <div class="most_popular"></div>
         </div>
         <div class="top_rated_container">
-          <h1>Latest</h1>
+          <h1>Top Rated</h1>
           <div class="top_rated"></div>
         </div>
       </section>
     </main>
+    <div class="search_div">
+      <form class="search">
+        <input type="text" placeholder="nome della serie" class="search_bar" />
+        <input type="submit" value="CERCA" />
+      </form>
+    </div>
     <footer></footer>
   </body>
 </html>

@@ -1,7 +1,29 @@
 body {
-  background-color: rgb(7, 7, 67);
+  background-color: rgb(1, 1, 20);
   color: white;
   text-align: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(7, 7, 52);
+  height: 80px;
+  display: flex;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.381);
+}
+
+.logo {
+  width: 230px;
+  height: 60px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 h1 {
@@ -21,7 +43,7 @@ h1 {
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(6, 6, 66, 0.245);
   padding: 10px;
   border-radius: 20px;
   cursor: pointer;
@@ -32,9 +54,65 @@ h1 {
   scale: 1.1;
 }
 
+.card:active {
+  scale: 0.8;
+}
+
 img {
   height: 300px;
   width: 200px;
   object-fit: cover;
+  border-radius: 20px;
+}
+
+.search_div {
+  margin: 80px;
+}
+
+.search_div form .search_bar {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  padding: 20px;
+  outline: none;
+  font-size: 1.2em;
+}
+
+.search_div form :nth-child(2) {
+  height: 30px;
+  width: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+  margin-left: 30px;
+  padding: 5px;
+}
+
+.search_div form .search_bar:hover {
+  background-color: rgb(204, 204, 191);
+}
+
+.search_div form :nth-child(2):hover {
+  background-color: rgb(204, 204, 191);
+}
+
+.overlay {
+  height: 1000px;
+  width: 100vw;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .tv_wrapper {
+  height: 50%;
+  width: 80%;
+  background-color: white;
   border-radius: 20px;
 }

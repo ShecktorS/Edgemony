@@ -1,30 +1,55 @@
-// IMPORT?
-const cE = (element) => document.createElement(element);
-const qS = (type) => document.querySelector(type);
-const bodyEl = document.body;
-const BASE_URL = "https://api.themoviedb.org/3/tv/";
-const BASE_URL_SEARCH = "https://api.themoviedb.org/3/search/tv?query=";
-const API_KEY = "api_key=6df0175461882f84933b5dc354d7e3e4";
-const BASE_URL_IMG = "https://image.tmdb.org/t/p/w500/";
-const myTvEl = qS(".my_tv");
-const mostPopularEl = qS(".most_popular");
-const topRatedEl = qS(".top_rated");
+import {
+  cE,
+  qS,
+  bodyEl,
+  BASE_URL,
+  BASE_URL_IMG,
+  BASE_URL_SEARCH,
+  API_KEY,
+  myTvEl,
+  mostPopularEl,
+  topRatedEl,
+  searchEl,
+  GET,
+  GET_SEARCH,
+} from "./utils.js";
 
-const searchEl = qS(".search");
+const infoTvGen = () => {
+  GET("top_rated?", (data) => data).then((data) => {
+    const tvs = data.results;
+    console.log(tvs);
 
+    tvs.forEach((element) => {
+      const overlayEl = cE("div");
+      const tvWrapperEl = cE("div");
+      const tvImgEl = cE("img");
+      const infoTvEl = cE("div");
+      const titleEl = cE("h2");
+      const descriptionEl = cE("p");
+      const castEl = cE("p");
+      const closeWrapperEl = cE("div");
+
+      tvImgEl.setAttribute("src", BASE_URL_IMG + element.poster_path); // da sistemare
+
+      overlayEl.className = "overlay";
+      tvWrapperEl.className = "tv_wrapper";
+      tvImgEl.className = "tv_img";
+      infoTvEl.className = "info_tv";
+      titleEl.className = "title";
+      descriptionEl.className = "description";
+      castEl.className = "cast";
+      closeWrapperEl.className = "cross";
+
+      bodyEl.appendChild(overlayEl);
+      overlayEl.appendChild(tvWrapperEl);
+      tvWrapperEl.append(tvImgEl, infoTvEl);
+    });
+  });
+};
 let myTvType;
 let myTvMostPopular;
 let myTvTopRated;
-const GET = async (tvEndpoint = "popular?") => {
-  const res = await fetch(BASE_URL + tvEndpoint + API_KEY);
-  const data = await res.json();
-  return data;
-};
-const GET_SEARCH = async (wordToSearch) => {
-  const res = await fetch(BASE_URL_SEARCH + wordToSearch + "&" + API_KEY);
-  const data = await res.json();
-  return data;
-};
+
 const cardGenerator = (data, myTvType, divEl) => {
   myTvType = data.results;
   myTvType.forEach((element) => {
@@ -33,10 +58,14 @@ const cardGenerator = (data, myTvType, divEl) => {
 
     cardEl.className = "card";
     imgEl.src = BASE_URL_IMG + element.poster_path;
+    imgEl.setAttribute("draggable", "false");
     divEl.appendChild(cardEl);
     cardEl.appendChild(imgEl);
+
+    cardEl.addEventListener("click", infoTvGen);
   });
 };
+
 const searchGen = (data) => {
   const myData = data.results;
   myData.forEach((element) => {
@@ -51,19 +80,21 @@ const searchGen = (data) => {
   });
 };
 
-// GET("popular?").then((tvPopular) =>
-//   cardGenerator(tvPopular, myTvMostPopular, mostPopularEl)
-// );
-// GET("top_rated?").then((tvTopRated) =>
-//   cardGenerator(tvTopRated, myTvTopRated, topRatedEl)
-// );
-
-searchEl.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const value = e.target[0].value;
-  GET_SEARCH(value).then((data) => {
-    searchGen(data);
-  });
+GET("popular?").then((tvPopular) => {
+  cardGenerator(tvPopular, myTvMostPopular, mostPopularEl);
 });
+GET("top_rated?").then((tvTopRated) =>
+  cardGenerator(tvTopRated, myTvTopRated, topRatedEl)
+);
+
+// searchEl.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   const valueOfInput = e.target[0].value;
+//   GET_SEARCH(valueOfInput).then((data) => {
+//     searchGen(data);
+//   });
+// });
+// PER L'HTML
 
 // Per visualizzare l'esercizio base invece dell'avanzato decommentare righe 54-59 e commmentare 61-67
