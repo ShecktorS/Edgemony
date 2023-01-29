@@ -58,7 +58,7 @@ h1 {
   scale: 0.8;
 }
 
-img {
+.card img {
   height: 300px;
   width: 200px;
   object-fit: cover;
@@ -104,7 +104,7 @@ img {
   top: -100px;
   left: 0;
   background-color: transparent;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,4 +115,85 @@ img {
   width: 80%;
   background-color: white;
   border-radius: 20px;
+  display: flex;
+  color: black;
+}
+
+.overlay .container_tv_img {
+  height: 100%;
+  width: 40%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.overlay .container_tv_img img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(0.5);
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.overlay .container_tv_img img:hover {
+  transform: scale(1.15);
+  transition: 1s ease-in-out;
+}
+
+.overlay .info_tv {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2em;
+  text-align: start;
+  border-bottom: 1px solid;
+  height: 40%;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.first_air_date {
+  align-self: stretch;
+  background-color: black;
+  font-weight: bold;
+  color: aliceblue;
+  height: 30px;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.1em;
+  padding: 0 30px;
+  height: 50%;
+}
+
+.overlay .cross {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(1, 1, 20);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .cross:hover {
+  background-color: rgb(8, 8, 39);
+}
+
+.cross:after {
+  display: inline-block;
+  content: "\00d7";
+  scale: 3;
+  transform: translateY(4px);
 }

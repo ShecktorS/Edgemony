@@ -14,38 +14,46 @@ import {
   GET_SEARCH,
 } from "./utils.js";
 
-const infoTvGen = () => {
-  GET("top_rated?", (data) => data).then((data) => {
-    const tvs = data.results;
-    console.log(tvs);
+const closeWrapperEl = cE("div");
+const overlayEl = cE("div");
+overlayEl.className = "overlay";
 
-    tvs.forEach((element) => {
-      const overlayEl = cE("div");
-      const tvWrapperEl = cE("div");
-      const tvImgEl = cE("img");
-      const infoTvEl = cE("div");
-      const titleEl = cE("h2");
-      const descriptionEl = cE("p");
-      const castEl = cE("p");
-      const closeWrapperEl = cE("div");
+closeWrapperEl.className = "cross";
 
-      tvImgEl.setAttribute("src", BASE_URL_IMG + element.poster_path); // da sistemare
+const infoTvGen = (URL_img, element) => {
+  const tvWrapperEl = cE("div");
+  const containerTvImgEl = cE("div");
+  const tvImgEl = cE("img");
+  const infoTvEl = cE("div");
+  const titleEl = cE("h2");
+  const descriptionEl = cE("p");
+  const firstAirDateEl = cE("p");
 
-      overlayEl.className = "overlay";
-      tvWrapperEl.className = "tv_wrapper";
-      tvImgEl.className = "tv_img";
-      infoTvEl.className = "info_tv";
-      titleEl.className = "title";
-      descriptionEl.className = "description";
-      castEl.className = "cast";
-      closeWrapperEl.className = "cross";
+  tvImgEl.src = URL_img;
+  titleEl.textContent = element.name;
+  firstAirDateEl.textContent = element.first_air_date;
+  element.overview === ""
+    ? (descriptionEl.textContent = `The description for ${element.name} is not available.`)
+    : (descriptionEl.textContent = element.overview);
+  element.overview.lenght <= 200
+    ? (descriptionEl.textContent = element.overview)
+    : (descriptionEl.textContent = element.overview.slice(0, 200) + "...");
 
-      bodyEl.appendChild(overlayEl);
-      overlayEl.appendChild(tvWrapperEl);
-      tvWrapperEl.append(tvImgEl, infoTvEl);
-    });
-  });
+  tvWrapperEl.className = "tv_wrapper";
+  containerTvImgEl.className = "container_tv_img";
+  tvImgEl.className = "tv_img";
+  infoTvEl.className = "info_tv";
+  titleEl.className = "title";
+  descriptionEl.className = "description";
+  firstAirDateEl.className = "first_air_date";
+
+  bodyEl.appendChild(overlayEl);
+  overlayEl.appendChild(tvWrapperEl);
+  tvWrapperEl.append(containerTvImgEl, infoTvEl);
+  containerTvImgEl.appendChild(tvImgEl);
+  infoTvEl.append(titleEl, firstAirDateEl, descriptionEl, closeWrapperEl);
 };
+
 let myTvType;
 let myTvMostPopular;
 let myTvTopRated;
@@ -62,7 +70,7 @@ const cardGenerator = (data, myTvType, divEl) => {
     divEl.appendChild(cardEl);
     cardEl.appendChild(imgEl);
 
-    cardEl.addEventListener("click", infoTvGen);
+    cardEl.addEventListener("click", () => infoTvGen(imgEl.src, element));
   });
 };
 
@@ -87,6 +95,10 @@ GET("top_rated?").then((tvTopRated) =>
   cardGenerator(tvTopRated, myTvTopRated, topRatedEl)
 );
 
+closeWrapperEl.addEventListener("click", () => {
+  overlayEl.textContent = "";
+  overlayEl.remove();
+});
 // searchEl.addEventListener("submit", (e) => {
 //   e.preventDefault();
 
