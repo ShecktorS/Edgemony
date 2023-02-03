@@ -1,0 +1,41 @@
+h1 {
+  color: red;
+  font-size: 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration-line: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all ease-in-out 0.4s;
+  border-radius: 20px;
+  padding: 0 5px;
+}
+
+nav a:hover {
+  background-color: aqua;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.strumenti_da_vendere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.strumenti_da_vendere img {
+  border-radius: 20px;
+}
