@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "63eba9d5b2254167eb11cd96"
+  },
+  "nome": "Villa Larderia",
+  "anno di costruzione": 1752
+},{
+  "_id": {
+    "$oid": "63eba9d5b2254167eb11cd97"
+  },
+  "nome": "Palazzo Inguaggiato",
+  "anno di costruzione": 1770
+},{
+  "_id": {
+    "$oid": "63eba9d5b2254167eb11cd98"
+  },
+  "nome": "Villa Villarosa",
+  "anno di costruzione": 1763
+},{
+  "_id": {
+    "$oid": "63eba9d5b2254167eb11cd99"
+  },
+  "nome": "Villa Trabia",
+  "anno di costruzione": 1700
+},{
+  "_id": {
+    "$oid": "63ebaa2bb2254167eb11cd9a"
+  },
+  "nome": "Villa Angiò",
+  "anno di costruzione": 1700
+}]

@@ -1,0 +1,301 @@
+use citta_di_Bagheria
+'switched to db citta_di_Bagheria'
+db 
+citta_di_Bagheria
+db.createCollection("ville")
+{ ok: 1 }
+db 
+citta_di_Bagheria
+show collections
+ville
+db.ville.insertOne({
+  nome: "Palazzo Butera-Branciforti",
+  anno di costruzione: 1258,
+  commitente: "Giuseppe Branciforti, principe di Pietraperzia e Leonforte",
+  architetti: ["Giovanni Giglio", "Vincenzo Fiorelli"],
+  descrizione: "La più antica, costruita nel 1658 e popolarmente nota come U Palazzu. Voluta da Giuseppe Branciforti, principe di Pietraperzia e Leonforte, venne concepita quale dimora lontana dalla dimensione della corte palermitana di cui il Branciforti aveva aspirato a diventare invano il reggente. Per tale motivo, sul portone d'ingresso della torre merlata tramite cui si accede al palazzo - non a caso rivolta ad occidente, verso Palermo - il principe fece scolpire «O corte a Dio»"
+  
+})
+Error: clone(t={}){const r=t.loc||{};return e({loc:new Position("line"in r?r.line:this.loc.line,"column"in r?r.column:...<omitted>...)} could not be cloned.
+db.ville.insertOne({
+    nome: "Palazzo Butera-Branciforti",
+  anno di costruzione: 1258,
+  commitente: "Giuseppe Branciforti, principe di Pietraperzia e Leonforte",
+  architetti: ["Giovanni Giglio", "Vincenzo Fiorelli"],
+  descrizione: "La più antica, costruita nel 1658 e popolarmente nota come U Palazzu. Voluta da Giuseppe Branciforti, principe di Pietraperzia e Leonforte, venne concepita quale dimora lontana dalla dimensione della corte palermitana di cui il Branciforti aveva aspirato a diventare invano il reggente. Per tale motivo, sul portone d'ingresso della torre merlata tramite cui si accede al palazzo - non a caso rivolta ad occidente, verso Palermo - il principe fece scolpire «O corte a Dio»",
+})
+Error: clone(t={}){const r=t.loc||{};return e({loc:new Position("line"in r?r.line:this.loc.line,"column"in r?r.column:...<omitted>...)} could not be cloned.
+db.ville.insertOne(
+  {  nome: "Palazzo Butera-Branciforti",
+  anno di costruzione: 1258,
+  commitente: "Giuseppe Branciforti, principe di Pietraperzia e Leonforte",
+  architetti: ["Giovanni Giglio", "Vincenzo Fiorelli"],
+  descrizione: "La più antica, costruita nel 1658 e popolarmente nota come U Palazzu. Voluta da Giuseppe Branciforti, principe di Pietraperzia e Leonforte, venne concepita quale dimora lontana dalla dimensione della corte palermitana di cui il Branciforti aveva aspirato a diventare invano il reggente. Per tale motivo, sul portone d'ingresso della torre merlata tramite cui si accede al palazzo - non a caso rivolta ad occidente, verso Palermo - il principe fece scolpire «O corte a Dio»"
+  
+})
+Error: clone(t={}){const r=t.loc||{};return e({loc:new Position("line"in r?r.line:this.loc.line,"column"in r?r.column:...<omitted>...)} could not be cloned.
+db.ville.insertOne(
+  {  nome: "Palazzo Butera-Branciforti",
+  "anno di costruzione": 1258,
+  commitente: "Giuseppe Branciforti, principe di Pietraperzia e Leonforte",
+  architetti: ["Giovanni Giglio", "Vincenzo Fiorelli"],
+  descrizione: "La più antica, costruita nel 1658 e popolarmente nota come U Palazzu. Voluta da Giuseppe Branciforti, principe di Pietraperzia e Leonforte, venne concepita quale dimora lontana dalla dimensione della corte palermitana di cui il Branciforti aveva aspirato a diventare invano il reggente. Per tale motivo, sul portone d'ingresso della torre merlata tramite cui si accede al palazzo - non a caso rivolta ad occidente, verso Palermo - il principe fece scolpire «O corte a Dio»"
+  
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId("63eba2d1b2254167eb11cd90")
+}
+db.ville.updateOne({titolo: "Palazzo Butera-Branciforti"},
+{
+  $set: {
+    "anno di costruzione": 1658
+    
+    
+  }
+  
+  
+}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.ville.updateOne({nome: "Palazzo Butera-Branciforti"},
+{
+  $set: {
+    "anno di costruzione": 1658
+    
+    
+  }
+  
+  
+}
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.ville.insertOne()
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0 (Collection.insertOne)
+db.ville.insertOne(
+  {
+    "nome": "Villa Valguarnera",
+  "anno di costruzione": 1712,
+  "commitente": "Principi di Valguarnera",
+  "architetti": [
+    "Giovanni Del Frago",
+    "Vincenzo Fiorelli",
+    "Tommaso Maria Napoli"
+  ],
+  "descrizione": "Costruita nel 1712 dai principi Valguarnera con interventi degli architetti Tommaso Maria Napoli, Vincenzo Fiorelli e Giovanni Del Frago. Nella composizione planimetrica si ravvisano interessanti elementi derivanti da matrici esoteriche ed alchemiche, come ad esempio nella pianta claviforme derivante dalla chiave dell'Opera alchemica e nella sistemazione della vicina altura (Montagnola di Valguarnera, 105 m) - sulla cui sommità fu realizzata una balaustrata ottagonale - come percorso simbolico dalla terra alla sfera celeste, lungo la quale si trovano sette sedili in pietra riferentisi ai sette stadi di trasformazione della materia."
+    
+  })
+{
+  acknowledged: true,
+  insertedId: ObjectId("63eba45bb2254167eb11cd91")
+}
+db.ville.insertMany(
+  [
+    {
+      "nome": "Villa Palagonia",
+  "anno di costruzione": 1715,
+  "commitente": "Principe di Gravina",
+  "architetti": ["N.D."],
+  "descrizione":"La più famosa, costruita nel 1715 dal principe Gravina di Palagonia; è nota come Villa dei Mostri a causa delle figure deformi e animalesche che secondo studi del 2008 seguono una matrice alchemica nella ricerca dell'armonia, partendo dalle sculture di musicanti (nigredo) per giungere alla consistenza materica delle creature deformi (rubedo)."
+    }, {
+      "nome": "Palazzo Cutò",
+  "anno di costruzione": 1716,
+  "commitente": "Luigi Onofrio Naselli, principe d'Aragona",
+  "architetti": ["Giuseppe Mariani"],
+  "descrizione": "Costruito nel 1716 da Luigi Onofrio Naselli, principe d'Aragona, su progetto di Giuseppe Mariani; è sede della Biblioteca comunale e del Museo del Giocattolo."
+    }, 
+    {
+      "nome": "Villa Cattolica",
+  "anno di costruzione": 1736,
+  "commitente": "Giuseppe Branciforti, principe di Pietraperzia e Leonforte",
+  "architetti": ["N.D."],
+  "descrizione": "Costruita nel 1736 dal principe di Cattolica Eraclea, che ospita il museo comunale dedicato al pittore Renato Guttuso dove sono conservate molte opere dell'autore nonché tele e sculture di altri artisti come Domenico Quattrociocchi, Pina Calì, Silvestre Cuffaro e Vincenzo Gennaro."
+    }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("63eba7f8b2254167eb11cd92"),
+    '1': ObjectId("63eba7f8b2254167eb11cd93"),
+    '2': ObjectId("63eba7f8b2254167eb11cd94")
+  }
+}
+db.ville.insertOne(
+  {
+    "nome": "Villa San Cataldo",
+  "anno di costruzione": 1700,
+  "commitente": "Principi Galletti di San Cataldo",
+  "architetti": ["N.D."],
+  "descrizione": "Costruita nella prima metà del XVIII secolo dai principi Galletti di San Cataldo. L'assetto architettonico risale ad un restyling effettuato alla fine del XIX secolo. Nel 1905 la villa fu acquistata dalla Compagnia di Gesù."
+  })
+{
+  acknowledged: true,
+  insertedId: ObjectId("63eba8a7b2254167eb11cd95")
+}
+db.createCollection("Altre_ville")
+{ ok: 1 }
+db.altre_ville.insertMany([
+  {
+    "nome": "Villa Larderia",
+    "anno di costruzione": 1752
+  },
+  {
+    "nome": "Palazzo Inguaggiato",
+    "anno di costruzione": 1770
+  },
+  {
+    "nome": "Villa Villarosa",
+    "anno di costruzione": 1763
+  },
+  {
+    "nome": "Villa Trabia",
+    "anno di costruzione": 1700
+  }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("63eba9d5b2254167eb11cd96"),
+    '1': ObjectId("63eba9d5b2254167eb11cd97"),
+    '2': ObjectId("63eba9d5b2254167eb11cd98"),
+    '3': ObjectId("63eba9d5b2254167eb11cd99")
+  }
+}
+db.altre_ville.insertOne({
+  nome: "Villa Angiò",
+  "anno di costruzione": 1700
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId("63ebaa2bb2254167eb11cd9a")
+}
+db.createCollection("chiese")
+{ ok: 1 }
+db.chiese.insertOne({
+   "nome": "Palazzo Butera-Branciforti",
+  "anno di costruzione": 1658,
+  "altro":"Fatta edificare dal principe Salvatore Branciforti nel 1769 lungo il nuovo asse urbano di Bagheria, fu ultimata nel 1771 ed intitolata alla Natività di Maria. Progettista fu Salvatore Attinelli. Nel 1872, per volere di Domenico Mangione, nella facciata della chiesa fu installato un orologio."
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId("63ebab39b2254167eb11cd9b")
+}
+db.chiese.updateMany({nome: "Palazzo Butera-Branciforti"},
+{
+  $set: {
+    nome: "Chiesa Madrice di Bagheria"
+    "anno di costruzione": 1769
+  }
+  
+  
+})
+Error: clone(t={}){const r=t.loc||{};return e({loc:new Position("line"in r?r.line:this.loc.line,"column"in r?r.column:...<omitted>...)} could not be cloned.
+db.chiese.updateMany({nome: "Palazzo Butera-Branciforti"},
+{
+  $set: {
+    "nome": "Chiesa Madrice di Bagheria"
+    "anno di costruzione": 1769
+  }
+  
+  
+})
+Error: clone(t={}){const r=t.loc||{};return e({loc:new Position("line"in r?r.line:this.loc.line,"column"in r?r.column:...<omitted>...)} could not be cloned.
+db.chiese.updateMany({"nome": "Palazzo Butera-Branciforti"},
+{
+  $set: {
+    "nome": "Chiesa Madrice di Bagheria"
+    "anno di costruzione": 1769
+  }
+  
+  
+})
+Error: clone(t={}){const r=t.loc||{};return e({loc:new Position("line"in r?r.line:this.loc.line,"column"in r?r.column:...<omitted>...)} could not be cloned.
+db.chiese.updateMany({"nome": "Palazzo Butera-Branciforti"},
+{
+  $set: {
+    "nome": "Chiesa Madrice di Bagheria",
+    "anno di costruzione": 1769
+  }
+  
+  
+})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.chiese.insertMany([
+  {
+    
+nome: "Chiesa del Sepolcro",
+"anno di costruzione": 1734,
+altro: "La prima costruzione, voluta dal principe Nicolò Branciforti, è del 1734, con successivi completamenti interni avvenuti nel 1744 e 1750. Le forme attuali si devono al progetto (1914) di Ernesto Armò, e riprendono schemi propri dello stile neogotico."
+  },
+  {
+   nome: "Chiesa delle Anime Sante",
+  "anno di costruzione": 1722,
+  altro: "Anticamente nota come Chiesa del Miserèmini, risale al 1722. Il prospetto fu progettato da Filippo Scordato agli inizi del XX secolo. All'interno si conservano importanti decorazioni parietali di Onofrio Tomaselli."
+    
+  }, 
+  {
+    nome: "Chiesa di Sant'Antonio",
+    "anno di costruzione": 1700,
+    altro: "iù conosciuta come Chiesa di Sant'Antonino, fu edificata alla fine del XVIII secolo dal duca di Angiò. L'attiguo convento si sviluppò durante il secolo successivo."
+    
+  }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("63ebadefb2254167eb11cd9c"),
+    '1': ObjectId("63ebadefb2254167eb11cd9d"),
+    '2': ObjectId("63ebadefb2254167eb11cd9e")
+  }
+}
+show databases
+citta_di_Bagheria   200.00 KiB
+sample_airbnb        53.98 MiB
+sample_analytics      9.15 MiB
+sample_geospatial     2.20 MiB
+sample_guides        40.00 KiB
+sample_mflix         49.98 MiB
+sample_restaurants    8.84 MiB
+sample_supplies       1.12 MiB
+sample_training      59.52 MiB
+sample_weatherdata    2.78 MiB
+admin               336.00 KiB
+local                 5.24 GiB
+use citta_sbagliate
+'switched to db citta_sbagliate'
+db 
+citta_sbagliate
+db.dropDatabase(citta_sbagliate)
+ReferenceError: citta_sbagliate is not defined
+db.dropDatabase("citta_sbagliate")
+{ ok: 1, dropped: 'citta_sbagliate' }
+use citta_di_Bagheria
+'switched to db citta_di_Bagheria'
+db.chiese.find({"nome": "Chiesa del Sepolcro"})
+{
+  _id: ObjectId("63ebadefb2254167eb11cd9c"),
+  nome: 'Chiesa del Sepolcro',
+  'anno di costruzione': 1734,
+  altro: 'La prima costruzione, voluta dal principe Nicolò Branciforti, è del 1734, con successivi completamenti interni avvenuti nel 1744 e 1750. Le forme attuali si devono al progetto (1914) di Ernesto Armò, e riprendono schemi propri dello stile neogotico.'
+}
+db.ville.countDocuments()
+6
+db.chiese.countDocuments()
+4
+db.altre_ville.countDocuments()
+5

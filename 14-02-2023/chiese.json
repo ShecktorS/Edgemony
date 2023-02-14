@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "63ebab39b2254167eb11cd9b"
+  },
+  "nome": "Chiesa Madrice di Bagheria",
+  "anno di costruzione": 1769,
+  "altro": "Fatta edificare dal principe Salvatore Branciforti nel 1769 lungo il nuovo asse urbano di Bagheria, fu ultimata nel 1771 ed intitolata alla Natività di Maria. Progettista fu Salvatore Attinelli. Nel 1872, per volere di Domenico Mangione, nella facciata della chiesa fu installato un orologio."
+},{
+  "_id": {
+    "$oid": "63ebadefb2254167eb11cd9c"
+  },
+  "nome": "Chiesa del Sepolcro",
+  "anno di costruzione": 1734,
+  "altro": "La prima costruzione, voluta dal principe Nicolò Branciforti, è del 1734, con successivi completamenti interni avvenuti nel 1744 e 1750. Le forme attuali si devono al progetto (1914) di Ernesto Armò, e riprendono schemi propri dello stile neogotico."
+},{
+  "_id": {
+    "$oid": "63ebadefb2254167eb11cd9d"
+  },
+  "nome": "Chiesa delle Anime Sante",
+  "anno di costruzione": 1722,
+  "altro": "Anticamente nota come Chiesa del Miserèmini, risale al 1722. Il prospetto fu progettato da Filippo Scordato agli inizi del XX secolo. All'interno si conservano importanti decorazioni parietali di Onofrio Tomaselli."
+},{
+  "_id": {
+    "$oid": "63ebadefb2254167eb11cd9e"
+  },
+  "nome": "Chiesa di Sant'Antonio",
+  "anno di costruzione": 1700,
+  "altro": "iù conosciuta come Chiesa di Sant'Antonino, fu edificata alla fine del XVIII secolo dal duca di Angiò. L'attiguo convento si sviluppò durante il secolo successivo."
+}]
