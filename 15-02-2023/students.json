@@ -1,0 +1,59 @@
+[{
+  "_id": {
+    "$oid": "63ecef8cbe94397d75883f09"
+  },
+  "nome": "Geronimo",
+  "cognome": "Martinez",
+  "matricola": "0665647",
+  "corsi": [
+    "Letteratura inglese",
+    "Italianistica"
+  ],
+  "esami": [
+    "Inglese scritto",
+    "arte"
+  ]
+},{
+  "_id": {
+    "$oid": "63ecef8cbe94397d75883f0a"
+  },
+  "nome": "Sabrina",
+  "cognome": "Shugar",
+  "matricola": "0665647",
+  "corsi": [
+    "Matematica di base"
+  ],
+  "esami": [
+    "Algebra lineare",
+    "Analisi",
+    "Psicologia dei processi decisionali"
+  ]
+},{
+  "_id": {
+    "$oid": "63ecef8cbe94397d75883f0c"
+  },
+  "nome": "Fabrizio",
+  "cognome": "Sciolto",
+  "matricola": "0664547",
+  "corsi": [
+    "Nessuno"
+  ],
+  "esami": [
+    "Prova finale"
+  ]
+},{
+  "_id": {
+    "$oid": "63ed00d3bcdd45acc0bf6695"
+  },
+  "nome": "Filippo",
+  "cognome": "cicciuzzo",
+  "matricola": "0033434",
+  "corsi": [
+    "Letteratura italiana",
+    "Inglesistica"
+  ],
+  "esami": [
+    "Italiano scritto",
+    "arte moderna"
+  ]
+}]
