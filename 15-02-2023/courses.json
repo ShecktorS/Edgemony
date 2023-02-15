@@ -1,0 +1,232 @@
+[{
+  "_id": {
+    "$oid": "63ecf5f05822022ea68ce983"
+  },
+  "nome del corso": "Matematica per le arti",
+  "materia": "Matematica artistica",
+  "docente": "Filippau Ciauciau"
+},{
+  "_id": {
+    "$oid": "63ecfd79a51c86950dff2994"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ecfd79a51c86950dff2995"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ecfd79a51c86950dff2996"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ecfd79a51c86950dff2997"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+},{
+  "_id": {
+    "$oid": "63ecfeac6fc82ea28108e4bc"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ecfeac6fc82ea28108e4bd"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ecfeac6fc82ea28108e4be"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ecfeac6fc82ea28108e4bf"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+},{
+  "_id": {
+    "$oid": "63ecff42b22ffc9c3867afba"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ecff42b22ffc9c3867afbb"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ecff42b22ffc9c3867afbc"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ecff42b22ffc9c3867afbd"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+},{
+  "_id": {
+    "$oid": "63ecff7e0d794a9383e8061a"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ecff7e0d794a9383e8061b"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ecff7e0d794a9383e8061c"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ecff7e0d794a9383e8061d"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+},{
+  "_id": {
+    "$oid": "63ed001a0e1889c60ac0f1d7"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ed001a0e1889c60ac0f1d8"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ed001a0e1889c60ac0f1d9"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ed001a0e1889c60ac0f1da"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+},{
+  "_id": {
+    "$oid": "63ed00d2bcdd45acc0bf6691"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ed00d2bcdd45acc0bf6692"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ed00d2bcdd45acc0bf6693"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ed00d2bcdd45acc0bf6694"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+},{
+  "_id": {
+    "$oid": "63ed014d0794c01fc0878a6c"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ed014d0794c01fc0878a6d"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ed014d0794c01fc0878a6e"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ed014d0794c01fc0878a6f"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+},{
+  "_id": {
+    "$oid": "63ed01e778f5c62efb4c4f67"
+  },
+  "nome del corso": "Tecnica organica di selezione",
+  "materia": "Chimica organica",
+  "docente": "Ronald Sceriff"
+},{
+  "_id": {
+    "$oid": "63ed01e778f5c62efb4c4f68"
+  },
+  "nome del corso": "Astrologia per i corsi di teorie scentifiche",
+  "materia": "Astrologia dinamica adattata",
+  "docente": "Stella Biondi"
+},{
+  "_id": {
+    "$oid": "63ed01e778f5c62efb4c4f69"
+  },
+  "nome del corso": "Design e cultura del territorio",
+  "materia": "Architettura industriale",
+  "docente": "Mario Costruito"
+},{
+  "_id": {
+    "$oid": "63ed01e778f5c62efb4c4f6a"
+  },
+  "nome del corso": "Migrazioni, diritti, integrazione",
+  "materia": "Giurisprudenza",
+  "docente": "Legolas Legiferio"
+}]
