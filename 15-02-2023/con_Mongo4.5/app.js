@@ -83,16 +83,7 @@ MongoClient.connect(url, (err, db) => {
   });
 });
 
-//SELEZIONO UN SOLO DATO
-/*MongoClient.connect(url, (err, db) =>{
-    if (err) throw err;
-    let dbase = db.db("demo6");
-    dbase.collection('utenti').findOne({}, (err, res) =>{
-        if (err) throw err;
-        console.log(res.nome)
-        db.close();
-    })
-})*/
+
 
 //SELEZIONO TUTTI I DATI
 /*MongoClient.connect(url, (err, db) => {
@@ -120,12 +111,3 @@ MongoClient.connect(url, (err, db) => {
 /*MongoClient.connect(url, (err, db) => {
     if (err) throw err;
     let dbase = db.db("demo6");
-
-    let query = {nome:'pippo'}
-    let newValue = {$set: {anni: 45, lavoro:"cybersecurity"}}
-    dbase.collection('utenti').updateOne(query, newValue ,function(err, res) {
-        if (err) throw err;
-        console.log(`record(s) aggiornati` )
-        db.close();
-    })
-})*/
