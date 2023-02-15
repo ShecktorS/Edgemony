@@ -82,26 +82,3 @@ MongoClient.connect(url, (err, db) => {
     db.close();
   });
 });
-
-//SELEZIONO TUTTI I DATI
-/*MongoClient.connect(url, (err, db) => {
-    if (err) throw err;
-    let dbase = db.db("demo6");
-    dbase.collection('utenti').find({}).toArray(function (err, res) {
-        if (err) throw err;
-        console.log(res)
-        db.close();
-    })
-})*/
-
-//SELEZIONO UN DATO CON FILTRO
-/*MongoClient.connect(url, (err, db) => {
-    if (err) throw err;
-    let dbase = db.db("demo6");
-    let query = {anni:'34'}
-    dbase.collection('utenti').find(query).toArray(function (err, res) {
-        if (err) throw err;
-        console.log(res)
-        db.close();
-    })
-})*/
