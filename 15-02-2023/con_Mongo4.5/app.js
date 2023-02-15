@@ -83,8 +83,6 @@ MongoClient.connect(url, (err, db) => {
   });
 });
 
-
-
 //SELEZIONO TUTTI I DATI
 /*MongoClient.connect(url, (err, db) => {
     if (err) throw err;
@@ -107,7 +105,3 @@ MongoClient.connect(url, (err, db) => {
         db.close();
     })
 })*/
-
-/*MongoClient.connect(url, (err, db) => {
-    if (err) throw err;
-    let dbase = db.db("demo6");
