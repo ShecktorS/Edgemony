@@ -1,0 +1,25 @@
+.DynS {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DynS p {
+  font-size: 2em;
+  will-change: auto;
+  animation: rotazione 2s ease-in-out infinite;
+}
+
+@keyframes rotazione {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}

@@ -1,0 +1,27 @@
+.Header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30px;
+  background-color: #65a8ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header ul {
+  display: flex;
+  gap: 15px;
+}
+
+.Header ul a {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+  transition: all ease 0.4s;
+}
+
+.Header ul a:hover {
+  color: black;
+}

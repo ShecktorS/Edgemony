@@ -1,0 +1,19 @@
+.Footer {
+  height: 170px;
+  background-color: #b3cbeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer hr {
+  width: 150px;
+}
+
+.msg {
+  display: flex;
+  gap: 30px;
+  font-size: 1.1em;
+  color: aliceblue;
+}
