@@ -1,0 +1,12 @@
+.PersonalTitle {
+  margin: 20px;
+}
+
+.PersonalTitle hr {
+  width: 250px;
+}
+
+.PersonalTitle h1 {
+  color: blueviolet;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
