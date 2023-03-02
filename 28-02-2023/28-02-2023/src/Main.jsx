@@ -17,6 +17,7 @@ const Main = () => {
   // Dark Mode = DM
   const [isDMEnable, setDM] = useState(false);
   const [isModalVisible, setModalVisible] = useState(false);
+  const [imageModal, setImageModal] = useState(null);
 
   const prova = { welcomeMsg: "Buongiorno a tutti i pazzi" };
   return (
@@ -26,7 +27,11 @@ const Main = () => {
       <Gallery />
       <Control listDataLength={productsList.length} />
       <PersonalTitle textContent={"La nostra lista dei prodotti"} />
-      <ListProducts listData={productsList} setModalVisible={setModalVisible} />
+      <ListProducts
+        listData={productsList}
+        setModalVisible={setModalVisible}
+        setImageModal={setImageModal}
+      />
       <DynS
         testo="Prova" /* Inserisci qui il testo da visualizzare */
         prova={prova.welcomeMsg}
@@ -43,10 +48,7 @@ const Main = () => {
         {isDMEnable ? "☀️" : "🌔"}
       </button>
       {isModalVisible && (
-        <ImgWrapper
-          setModalVisible={setModalVisible}
-          productsList={productsList}
-        />
+        <ImgWrapper setModalVisible={setModalVisible} imageModal={imageModal} />
       )}
     </div>
   );

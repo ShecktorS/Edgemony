@@ -1,7 +1,7 @@
 import CardProduct from "../cardProduct";
 import "./index.css";
 
-const ListProducts = ({ listData, setModalVisible }) => {
+const ListProducts = ({ listData, setModalVisible, setImageModal }) => {
   return (
     <div className="ListProducts">
       {listData.map((product) => (
@@ -9,6 +9,7 @@ const ListProducts = ({ listData, setModalVisible }) => {
           productData={product}
           key={product.id}
           setModalVisible={setModalVisible}
+          setImageModal={setImageModal}
         />
       ))}
     </div>

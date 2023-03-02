@@ -23,7 +23,7 @@
 
 .ImgWrapper img {
   position: absolute;
-  height: 500px;
+  height: 400px;
   aspect-ratio: 3/2;
   object-fit: cover;
   z-index: 3;
