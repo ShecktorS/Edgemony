@@ -1,4 +1,4 @@
-import "./header.css";
+import "./index.css";
 
 const Header = () => {
   const link = [
@@ -6,6 +6,7 @@ const Header = () => {
     "https://www.youtube.com/?gl=IT&hl=it",
     "https://www.instagram.com/",
   ];
+
   return (
     <div className="Header">
       <h1>LOGO</h1>

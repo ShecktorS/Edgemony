@@ -1,11 +1,11 @@
 import Button from "../button";
 import "./index.css";
 
-const CardProduct = ({ productData }) => {
+const CardProduct = ({ productData, setModalVisible }) => {
   const onGetStock = () =>
     alert(`Ci sono ${productData.stock} prodotti disponibili`);
 
-  const onImageClick = () => window.open(productData.images[0], "_blank");
+  const onImageClick = () => setModalVisible(true);
 
   return (
     <div

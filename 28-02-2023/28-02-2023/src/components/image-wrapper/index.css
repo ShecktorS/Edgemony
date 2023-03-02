@@ -1,0 +1,32 @@
+.ImgWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.ImgWrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.448);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  backdrop-filter: blur(7px);
+}
+
+.ImgWrapper img {
+  position: absolute;
+  height: 500px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  z-index: 3;
+  border-radius: 30px;
+  border: rgb(129, 201, 199) 20px double;
+}

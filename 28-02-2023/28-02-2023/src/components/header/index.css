@@ -25,3 +25,14 @@
 .Header ul a:hover {
   color: black;
 }
+
+@media (max-width: 670px) {
+  .Header ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .Header ul a {
+    font-size: 1em;
+  }
+}
