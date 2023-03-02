@@ -1,6 +1,6 @@
 import "./index.css";
 
-const ImgWrapper = (productsList, setModalVisible) => {
+const ImgWrapper = ({ productsList, setModalVisible }) => {
   return (
     <div className="ImgWrapper">
       <div className="overlay" onClick={() => setModalVisible(false)}></div>
