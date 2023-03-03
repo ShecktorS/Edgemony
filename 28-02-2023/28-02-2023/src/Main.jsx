@@ -28,7 +28,6 @@ const Main = () => {
       <Control listDataLength={productsList.length} />
       <PersonalTitle textContent={"La nostra lista dei prodotti"} />
       <ListProducts
-        listData={productsList}
         setModalVisible={setModalVisible}
         setImageModal={setImageModal}
       />
