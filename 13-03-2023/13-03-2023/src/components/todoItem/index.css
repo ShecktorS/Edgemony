@@ -1,0 +1,7 @@
+.TodoItem {
+  border: dotted black 1px;
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+}
